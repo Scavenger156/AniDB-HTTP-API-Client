@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.scavenger156</groupId>
+	<artifactId>AniDB-HTTP-API-Client</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>[adbhac] AniDB-HTTP-API-Client</name>
+	<url>https://github.com/Scavenger156/AniDB-HTTP-API-Client</url>
+
+	<organization>
+		<name>github.com/Scavenger156</name>
+		<url>https://github.com/Scavenger156/AniDB-HTTP-API-Client</url>
+	</organization>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- Java 8 (Das wird auch von Eclipse und dem Compilerplugin erkannt daher 
+			müssen wir das Compilerplugin nicht mehr anpassen) -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<!-- Snapshotserver für deployment mittels dem goal "deploy" Username und 
+		Password stehen in der "settings.xml" -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Shapshot repository</name>
+			<url>http://XXX/nexus/content/repositories/snapshots/</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<!-- Abhängigkeiten -->
+	<dependencies>
+		<!-- JUnit für Testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- Build erweitern -->
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<!-- Der "java" Ordner soll wie sonst auch als wie der Ordner "resources" 
+					behandelt werden werden. Ist wichtig wenn die ".fxml"s in diesem Ordner liegen -->
+				<directory>src/main/java</directory>
+			</resource>
+		</resources>
+		<plugins>
+			<!-- Eine extra "-sources.jar" ist für das spätere deployen wichtig. -->
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

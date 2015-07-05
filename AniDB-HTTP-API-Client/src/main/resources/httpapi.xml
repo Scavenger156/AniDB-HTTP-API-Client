@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<anime id="10948" restricted="false">
+<type>TV Series</type>
+<episodecount>12</episodecount>
+<startdate>2015-04-10</startdate>
+<enddate>2015-06-26</enddate>
+<titles>
+<title xml:lang="x-jat" type="main">Punch Line</title>
+<title xml:lang="ja" type="official">パンチライン</title>
+<title xml:lang="en" type="official">Punch Line</title>
+</titles>
+<url>http://www.punchline.jp/</url>
+<creators>
+<name id="5557" type="Music">Komuro Tetsuya</name>
+<name id="20972" type="Direction">Uemura Yutaka</name>
+<name id="32523" type="Original Work">Mages.</name>
+<name id="741" type="Original Work">Fuji TV</name>
+<name id="31375" type="Work">MAPPA</name>
+<name id="29824" type="Character Design">Iwasaki Shouta</name>
+</creators>
+<description>If he sees underwear, humanity will be destroyed!?
+http://anidb.net/ch71697 [Iridatsu Yuuta] is a high school student, with a peculiar habit. When he sees a girl`s panties, he gets so excited he faints! After a certain incident with a ghost cat, his soul gets separated from his body. Using his special powers, Yuuta watches the daily lives of the inhabitants of an apartment and sometimes plays tricks on them. Eventually, Yuuta decides to unlock the secrets to why Earth will be destroyed and tries to save it!
+Source: Crunchyroll</description>
+<ratings>
+<permanent count="229">3.50</permanent>
+<temporary count="231">5.90</temporary>
+</ratings>
+<picture>164994.jpg</picture>
+<resources>
+<resource type="1">
+<externalentity>
+<identifier>16579</identifier>
+</externalentity>
+</resource>
+<resource type="2">
+<externalentity>
+<identifier>28617</identifier>
+</externalentity>
+</resource>
+<resource type="4">
+<externalentity>
+<url>http://www.punchline.jp/</url>
+</externalentity>
+</resource>
+<resource type="6">
+<externalentity>
+<identifier>Punchline_(anime)</identifier>
+</externalentity>
+</resource>
+<resource type="7">
+<externalentity>
+<identifier>パンチライン_(アニメ)</identifier>
+</externalentity>
+</resource>
+<resource type="8">
+<externalentity>
+<identifier>3680</identifier>
+</externalentity>
+</resource>
+<resource type="9">
+<externalentity>
+<identifier>351796</identifier>
+</externalentity>
+</resource>
+<resource type="10">
+<externalentity>
+<identifier>17961</identifier>
+</externalentity>
+</resource>
+</resources>
+<tags>
+<tag id="1157" parentid="2653" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2015-03-04">
+<name>horny nosebleed</name>
+<count>1</count>
+<description>In Japanese media, healthy young men who have no other sexual outlet will often suffer nosebleeds upon seeing the naked female body, or even just a pair of well-filled panties.
+The nosebleed is, of course, a visual shorthand/euphemism for sexual arousal. It is commonly interpreted that way for males and females, with little trickles of blood indicating mild arousal, and gushing fountains of blood indicating erection/extreme arousal in both sexes. It can also be interpreted as shorthand strictly for erections in males. In that case, when blood shoots from the nose explosively, and in ridiculous quantity, the implication would be an ejaculation.
+Source: TVTrope</description>
+</tag>
+<tag id="1278" parentid="2274" approval="100" spoiler="false" weight="100" localspoiler="false" globalspoiler="false" verified="true" update="2010-05-01">
+<name>android</name>
+<count>1</count>
+<description>An android is a robot or synthetic organism designed to look and act like a human.</description>
+</tag>
+<tag id="2274" parentid="2638" approval="100" spoiler="false" weight="100" localspoiler="false" globalspoiler="false" verified="true" update="2012-07-04">
+<name>robot</name>
+<count>1</count>
+<description>A robot is an automatically guided machine, able to do tasks on its own. Another common characteristic is that by its appearance or movements, a robot often conveys a sense that it has intent or agency of its own.
+Not to be confused with android (human-like robot).</description>
+</tag>
+<tag id="2605" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-28">
+<name>dynamic</name>
+<count>1</count>
+<description>Some of the central structural elements in anime are: 
+Plot Continuity 
+How does the plot or several plots unfold. Are they a strictly linear retelling of one big continuing story, a serial, possibly with several side stories, or is the content chopped into a set of unconnected episodes, only sharing the same setting and characters?
+Stereotype Characters
+Then there is the question of the character set presentation. Is it completely original, or is it your usual stereotypical character cast. Both choices have their merit, for example it would not really make much sense to reinvent the wheel for a harem anime. Fans of that genre come to expect their favourite stereotype protagonists.
+Plot Twists
+Finally there is the question of how complex the plot / the story unfolds. Are there side-plots that merge into the main plot leading to unexpected plot twists, or is the anime quite predictable? The latter would not be appropriate for detective stories. In harem anime on the other hand a foreseeable outcome is actually something the fans will come to expect.</description>
+</tag>
+<tag id="2607" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2009-04-29">
+<name>themes</name>
+<count>1</count>
+<description>Themes describe the very central elements important to the anime stories. They set the backdrop against which the protagonists must face their challenges. Be it School Life, present Daily Life, Military action, Cyberpunk, Law and Order detective work, Sports, or the Underworld. These are only but a few of the more typical backgrounds for anime plots. Add to that a Conspiracy setting with a possible tragic outcome, the Themes span most of the imaginable subject matter relevant to anime.</description>
+</tag>
+<tag id="2609" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2009-04-22">
+<name>original work</name>
+<count>1</count>
+<description>What the anime is based on! Mostly of academic interest, but a useful bit of info, hinting at the possible depth of story.</description>
+</tag>
+<tag id="2610" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2009-04-22">
+<name>setting</name>
+<count>1</count>
+<description>The setting describes in what time and place an anime takes place. To a certain extent it describes what you can expect from the world in the anime.</description>
+</tag>
+<tag id="2611" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-08">
+<name>elements</name>
+<count>1</count>
+<description>Next to Themes setting the backdrop for the protagonists in anime, there are the more detailed plot Elements that centre on character interactions: "What do characters do to each other or what is done to them?". Is it violent Action, an awe-inspiring Adventure in a foreign place, the gripping life of a Detective, a slapstick Comedy, an Ecchi Harem anime, a SciFi epic, or some Fantasy travelling adventure?</description>
+</tag>
+<tag id="2612" parentid="2610" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2009-04-22">
+<name>time</name>
+<count>1</count>
+<description>This placeholder lists different epochs in human history and more vague but important timelines such as the future, the present and the past. </description>
+</tag>
+<tag id="2623" parentid="2611" approval="100" spoiler="false" weight="300" localspoiler="false" globalspoiler="false" verified="true" update="2011-01-06">
+<name>super power</name>
+<count>1</count>
+<description>Be it an ancient Greek Heracles, a cybernetic muscle-man, or a fourteen year-old girl in a mini-skirted sailor suit. As long as they have super powers, they`re in the show.</description>
+</tag>
+<tag id="2624" parentid="2612" approval="100" spoiler="false" weight="200" localspoiler="false" globalspoiler="false" verified="true" update="2009-04-30">
+<name>present</name>
+<count>1</count>
+<description>Somewhere between past and future</description>
+</tag>
+<tag id="2637" parentid="2846" infobox="true" approval="100" spoiler="false" weight="600" localspoiler="false" globalspoiler="false" verified="true" update="2009-04-29">
+<name>time travel</name>
+<count>1</count>
+<description>In time travel anime characters are transported through time either figuratively or literally to find themselves either in the past or the future</description>
+</tag>
+<tag id="2638" parentid="2846" approval="100" spoiler="false" weight="100" localspoiler="false" globalspoiler="false" verified="true" update="2005-05-07">
+<name>mecha</name>
+<count>1</count>
+<description>Mecha in Japanese basically means mechanical things; everything from an electric whisk or a car to a spaceship or a robot. Here however we limit it to the more exotic things usually referred to as mecha anime: robots, whether controlled by a human or not, and their ilk. See Androids, Piloted Robots, Power Suits, Robot Helpers, Transforming Robots for a more specific classification.</description>
+<picurl>42077.jpg</picurl>
+</tag>
+<tag id="2653" parentid="2853" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2009-05-04">
+<name>slapstick</name>
+<count>1</count>
+<description>Slapstick humour is generally recognized by lots of physical abuse, horseplay and practical jokes. Also often seen are impossible situations, using sounds to illustrate impossible stunts that aren`t shown on-screen and to create tension for audience anticipation.</description>
+</tag>
+<tag id="2797" parentid="2609" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2009-05-18">
+<name>new</name>
+<count>1</count>
+<description>Not based on anything, the story is a new work, usually made up by the people involved in creating the anime. Generally if an original work (原作) credit is given, it will be to the studio, or director, or other members of the production team.</description>
+</tag>
+<tag id="2826" parentid="2856" infobox="true" approval="100" spoiler="false" weight="600" localspoiler="false" globalspoiler="false" verified="true" update="2010-01-27">
+<name>pantsu</name>
+<count>1</count>
+<description>"Panties" in Japanese. Upskirt views in various positions are typical, however all forms of partial or fully exposed panties are accepted. Exposure is usually accidental, but may also be deliberate. Pantsu views may be exclusive to the viewer without impacting any characters. Bikinis are not pantsu.</description>
+<picurl>5721.jpg</picurl>
+</tag>
+<tag id="2846" parentid="2611" approval="100" spoiler="false" weight="100" localspoiler="false" globalspoiler="false" verified="true" update="2011-04-11">
+<name>science fiction</name>
+<count>1</count>
+<description>Science fiction stories usually focus on how situations could be different in the future when we are more technologically advanced; due to either our own achievements or having met with other civilizations whom we have learned from. </description>
+</tag>
+<tag id="2853" parentid="2611" approval="100" spoiler="false" weight="100" localspoiler="false" globalspoiler="false" verified="true" update="2009-08-01">
+<name>comedy</name>
+<count>1</count>
+<description>Anime whose central struggle causes hilarious results. These stories are built upon funny characters, situations and events. A comedy anime is laced with humour and sets out to provoke laughter from the audience.
+Japanese humour can be a bit strange to westerners, so if you`re new to this type of humour, just bear with it; it`ll most likely grow on you if you`re a fan of other kinds of comedy.</description>
+</tag>
+<tag id="2856" parentid="2611" approval="100" spoiler="false" weight="100" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-05">
+<name>ecchi</name>
+<count>1</count>
+<description>Fan service is found in many anime, in many forms. When the service has a distinctly sexual slant to it, and it appears to be a major focus of the show, then it`s safe to assume you`re watching ecchi.
+The word "ecchi" is used by English-speaking anime fans to refer to refer to soft-core pornographic or sexually suggestive anime and manga. This is a western invention; in Japanese, it is a catch-all term for all things anyhow sexual in nature, not being limited to porn, but also not really considered a "milder" term, as it may also refer to sexual intercourse itself. The term "ecchi" in Japanese comes from the pronunciation of the letter "H" in English, which is rendered into Japanese syllabary as エッチ, which in turn is transliterated in the English alphabet as "ecchi" or "etchi". It is not, as many believe, short for "hentai" -- that, too, seems to be a western invention. It is, however, nearly as misunderstood and misapplied a term as "hentai".
+The line between ecchi and hentai, from the western perspective over these terms, can be hard to draw at times; one good rule of thumb is: if it was aired on Japanese public TV at all, it probably wasn`t hentai. Ecchi usually features all the specifics to human anatomy that can only be found in anime, and generally avoids full nudity, instead abusing of panty shots. Hentai, on the other hand, will usually show full frontal nudity in some explicit form, including genitalia, and full, intimate sex scenes. At its mildest, ecchi is composed of double entendres, big misunderstandings, and sexual farce; at its most explicit, it is still in the realm of softcore pornography, with full breast shots, full back nudity and similar content, but no display of genitalia. Another good way to distinguish the two is looking for animated sex scenes; if one is found, you have generally left the genre entirely, though a few borderline exceptions apply here. For AniDB`s purposes, the distinction between explicit ecchi and actual hentai is simple: if it was sold with a 18+ restriction in its country of origin, it is hentai; if it was sold without it, it is ecchi.
+Source: TV Tropes</description>
+<picurl>32416.jpg</picurl>
+</tag>
+<tag id="2874" parentid="2607" approval="100" spoiler="false" weight="200" localspoiler="false" globalspoiler="false" verified="true" update="2015-02-16">
+<name>disaster</name>
+<count>1</count>
+<description>A disaster is a large-scale natural or human-made situation that causes great loss of or threat to life, health, property, or environment in such a way that society or environment are affected substantially.</description>
+</tag>
+<tag id="2931" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-07">
+<name>old animetags</name>
+<count>1</count>
+</tag>
+<tag id="3145" parentid="2874" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2015-06-14">
+<name>impact event</name>
+<count>1</count>
+<description>An impact event is a collision between celestial objects causing measurable effects. Impact events have physical consequences and have been found to regularly occur in planetary systems, though the most frequent involve asteroids, comets or meteoroids and have minimal impact. When large objects impact terrestrial planets like the Earth, there can be significant physical and biospheric consequences, though atmospheres mitigate many surface impacts through atmospheric entry. Impact structures are dominant landforms on many celestial solid objects and present the strongest empirical evidence for their frequency and scale. In fiction, an impact event is a common way to end the world as we know it, either through the impact itself or through its aftermath, and it may happen either naturally or through human hands; this may include man-made objects, such as space debris and fictional space colonies.
+Source: Wikipedia</description>
+</tag>
+<tag id="3663" parentid="6347" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-11-14">
+<name>body snatcher</name>
+<count>1</count>
+<description>A person`s body is taken over by some foreign intelligence. It`s not brainwashing, because they still have control of their own mind — but that`s all they have. Either they`ve been reduced to a spectator in their own body, or their soul has been booted out of their body entirely. Either way, the rest of the cast will soon find he`s not himself.</description>
+</tag>
+<tag id="3865" parentid="6153" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2008-11-07">
+<name>noitaminA</name>
+<count>1</count>
+<description>noitaminA (ノイタミナ) – Animation written backwards – is a Fuji Television programming block, devoted to anime, broadcast each Thursday night from 00:45 to 1:15. It was launched with the intention of expanding the target audience beyond the typical young male demographic.
+The timeslot was expanded from half an hour to a full hour in 2010, and now airs Thursday nights from 00:45 to 1:45.
+noitaminA aired its first non-anime series in 2010, with the premiere of the live-action adaptation of Moyashimon. On April 15, 2010, Fuji TV and FUNimation announced an agreement that allows FUNimation to simulcast series from the noitaminA block in North America within an hour of their airing in Japan.
+Official Japanese website: http://noitamina.tv/
+A somewhat less up-to-date English version: http://www.fujicreative.co.jp/intldept/animation/noitaminA.html</description>
+<picurl>36897.jpg</picurl>
+</tag>
+<tag id="4113" parentid="3663" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-11-14">
+<name>body exchange</name>
+<count>1</count>
+<description>Two or more characters swap bodies (or, equally, swap minds) by some form of magic or applied phlebotinum.
+When this plot is done, usually the voices also switch as narrative cheat to help viewers keep track of who`s who. More subtly, it`s just the eyes. More serious/action-oriented shows might not do this. The Flip often involves characters of different ages, genders, races, or social classes. Another variation is a protagonist and antagonist switching, which usually involves each trying to undermine the other`s organization while simultaneously trying to switch back. If one or both of the characters have superpowers or other special abilities, they`ll have a lot of trouble figuring their new powers out.</description>
+</tag>
+<tag id="4333" parentid="6230" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2010-03-12">
+<name>predominantly female cast</name>
+<count>1</count>
+<description>In a show with an All-Female Cast, all primary characters are female. Male characters, if any, will only have minor roles or be entirely absent from the story`s focus.</description>
+<picurl>70752.jpg</picurl>
+</tag>
+<tag id="4343" parentid="2931" approval="100" spoiler="false" weight="0" localspoiler="true" globalspoiler="false" verified="false" update="2009-09-21">
+<name>main character dies</name>
+<count>1</count>
+<description>At least one of the main characters in the anime dies.</description>
+</tag>
+<tag id="6055" parentid="2605" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2015-01-15">
+<name>time loop</name>
+<count>1</count>
+<description>A time loop is a common plot device in science fiction (especially in universes where time travel is commonplace). Events in the story repeat themselves a number of times with or without some variation with each pass. Most characters either do not realise this is occurring or are attempting to break the cycle in some way. 
+One well-known example of this is in the 1993 film Groundhog Day, in which the main character is the only one aware of the time loop, although time loops had appeared in many fictional works prior to that. Stories with time loops commonly center on correcting past mistakes or on getting a character to recognise some key truth; escape from the loop may then follow.</description>
+</tag>
+<tag id="6151" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-10">
+<name>technical aspects</name>
+<count>1</count>
+<description>It may sometimes be useful to know about technical aspects of a show, such as information about its broadcasting or censorship. Such information can be found here.</description>
+</tag>
+<tag id="6153" parentid="6151" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-10">
+<name>multi-anime projects</name>
+<count>1</count>
+<description>Many anime are created as part of larger projects encompassing many shows without direct relation to one another. Normally, there is a specific idea in mind: for example, the http://anidb.net/t4859 [Young Animator Training Project] aims to stimulate the on-the-job training of next-generation professionals of the anime industry, whereas the http://anidb.net/t3763 [World Masterpiece Theatre] aims to animate classical stories from all over the world.</description>
+</tag>
+<tag id="6230" parentid="2605" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-10-20">
+<name>cast</name>
+<count>1</count>
+</tag>
+<tag id="6347" parentid="2607" approval="100" spoiler="false" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2015-02-17">
+<name>body and host</name>
+<count>1</count>
+<description>When a foreign entity like that of a symbiote, body snatcher, puppeteer parasite, or even a hacker (when regarding machines like robots and computers) enters/outright hijacks a body, the possessed subject becomes what is usually called: the host.
+The basic purpose of the host varies on what the point was for it to have been hijacked in the first place. Sometimes it`s used as a disguise, other times it`s used as a decoy and destraction, even simply being used as a weapon and piece of armor that the possessor uses to cause sheer chaos and destruction, but sometimes... a host can be used for fetish fuel.</description>
+</tag>
+</tags>
+<characters>
+<character id="71697" type="main character in" update="2015-05-26">
+<rating votes="2">6.44</rating>
+<name>Iridatsu Yuuta</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<description>In episode 7, it is revealed that Yuuta was originally a boy named Pine who ended up switching bodies with a girl named Chiyoko. As such, Yuuta is biologically female.</description>
+<picture>165002.jpg</picture>
+<seiyuu id="11" picture="32253.jpg">Inoue Marina</seiyuu>
+</character>
+<character id="71698" type="main character in" update="2014-11-27">
+<rating votes="4">7.05</rating>
+<name>Daihatsu Meika</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>165003.jpg</picture>
+<seiyuu id="3" picture="44969.jpg">Kugimiya Rie</seiyuu>
+</character>
+<character id="71699" type="main character in" update="2015-02-19">
+<rating votes="5">5.77</rating>
+<name>Narugino Mikatan</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>165004.jpg</picture>
+<seiyuu id="34626" picture="144409.jpg">Amamiya Sora</seiyuu>
+</character>
+<character id="71700" type="main character in" update="2014-11-27">
+<rating votes="2">6.10</rating>
+<name>Hikiotani Ito</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>165001.jpg</picture>
+<seiyuu id="1798" picture="20493.jpg">Kotobuki Minako</seiyuu>
+</character>
+<character id="71701" type="main character in" update="2014-11-27">
+<rating votes="3">6.34</rating>
+<name>Chichibu Rabura</name>
+<gender>female</gender>
+<charactertype id="1">Character</charactertype>
+<picture>165000.jpg</picture>
+<seiyuu id="5" picture="37146.jpg">Tomatsu Haruka</seiyuu>
+</character>
+<character id="73395" type="secondary cast in" update="2015-02-23">
+<rating votes="2">6.44</rating>
+<name>Chiranosuke</name>
+<gender>unknown</gender>
+<charactertype id="1">Character</charactertype>
+<picture>169162.jpg</picture>
+<seiyuu id="38546" picture="143368.jpg">Yoshida Yuuri</seiyuu>
+</character>
+<character id="74780" type="appears in" update="2015-04-26">
+<name>Teraoka Ryuuto</name>
+<gender>male</gender>
+<charactertype id="1">Character</charactertype>
+<picture>172639.jpg</picture>
+<seiyuu id="2487" picture="23183.jpg">Akabane Kenji</seiyuu>
+</character>
+</characters>
+<episodes>
+<episode id="167689" update="2015-04-08">
+<epno type="1">4</epno>
+<length>25</length>
+<airdate>2015-05-01</airdate>
+<rating votes="5">2.21</rating>
+<title xml:lang="ja">取り憑くシマ模様</title>
+<title xml:lang="en">Possessed by the Stripes</title>
+<title xml:lang="fr">Posédés par les rayures</title>
+<title xml:lang="x-jat">Tori Tsuku Shima Moyou</title>
+</episode>
+<episode id="167690" update="2015-04-08">
+<epno type="1">3</epno>
+<length>25</length>
+<airdate>2015-04-24</airdate>
+<rating votes="5">2.15</rating>
+<title xml:lang="ja">火星人, 襲来!</title>
+<title xml:lang="en">Martians Attack!</title>
+<title xml:lang="fr">Les Martiens débarquent !</title>
+<title xml:lang="x-jat">Kaseijin, Shuurai!</title>
+</episode>
+<episode id="167691" update="2015-04-08">
+<epno type="1">2</epno>
+<length>25</length>
+<airdate>2015-04-17</airdate>
+<rating votes="4">2.93</rating>
+<title xml:lang="ja">生類憐れみのレース</title>
+<title xml:lang="en">The Lace of Compassion</title>
+<title xml:lang="fr">Course pour la protection des animaux</title>
+<title xml:lang="x-jat">Shourui Awaremi no Lace</title>
+</episode>
+<episode id="167692" update="2015-04-08">
+<epno type="1">1</epno>
+<length>25</length>
+<airdate>2015-04-10</airdate>
+<rating votes="7">2.24</rating>
+<title xml:lang="ja">パンツパニック</title>
+<title xml:lang="en">Panty Panic</title>
+<title xml:lang="fr">Pants Panic</title>
+<title xml:lang="x-jat">Pants Panic</title>
+</episode>
+<episode id="167805" update="2015-04-09">
+<epno type="3">C2</epno>
+<length>2</length>
+<airdate>2015-04-10</airdate>
+<title xml:lang="en">Ending</title>
+</episode>
+<episode id="167806" update="2015-04-09">
+<epno type="3">C1</epno>
+<length>2</length>
+<airdate>2015-04-10</airdate>
+<title xml:lang="en">Opening</title>
+</episode>
+<episode id="167821" update="2015-04-10">
+<epno type="4">T3</epno>
+<length>2</length>
+<title xml:lang="en">PV 2</title>
+</episode>
+<episode id="167822" update="2015-04-10">
+<epno type="4">T2</epno>
+<length>0</length>
+<title xml:lang="en">PV 2</title>
+</episode>
+<episode id="167823" update="2015-04-10">
+<epno type="4">T1</epno>
+<length>0</length>
+<title xml:lang="en">PV 1</title>
+</episode>
+<episode id="168129" update="2015-04-23">
+<epno type="1">8</epno>
+<length>25</length>
+<airdate>2015-05-29</airdate>
+<rating votes="3">3.11</rating>
+<title xml:lang="ja">Panty Party!</title>
+<title xml:lang="en">Panty Party!</title>
+<title xml:lang="fr">Panty Party!</title>
+<title xml:lang="x-jat">Panty Party!</title>
+</episode>
+<episode id="168130" update="2015-04-23">
+<epno type="1">7</epno>
+<length>25</length>
+<airdate>2015-05-22</airdate>
+<rating votes="3">3.48</rating>
+<title xml:lang="ja">帰ってきた, パンツパニック</title>
+<title xml:lang="en">Panty Panic Returns</title>
+<title xml:lang="fr">Pants Panic, le retour</title>
+<title xml:lang="x-jat">Kaette Kita, Pants Panic</title>
+</episode>
+<episode id="168131" update="2015-04-23">
+<epno type="1">6</epno>
+<length>25</length>
+<airdate>2015-05-15</airdate>
+<rating votes="4">4.19</rating>
+<title xml:lang="ja">大晦日だよ, 明香えもん</title>
+<title xml:lang="en">It`s New Year`s Eve, Meikaemon</title>
+<title xml:lang="fr">C’est le jour de l’an, Meikaemon !</title>
+<title xml:lang="x-jat">Oomisoka Da yo, Meika Emon</title>
+</episode>
+<episode id="168132" update="2015-04-23">
+<epno type="1">5</epno>
+<length>25</length>
+<airdate>2015-05-08</airdate>
+<rating votes="5">5.29</rating>
+<title xml:lang="ja">愛, 死す</title>
+<title xml:lang="en">Ito Dies</title>
+<title xml:lang="fr">La mort d`Ito</title>
+<title xml:lang="x-jat">Ito, Shisu</title>
+</episode>
+<episode id="168587" update="2015-05-21">
+<epno type="1">11</epno>
+<length>25</length>
+<airdate>2015-06-19</airdate>
+<rating votes="2">3.12</rating>
+<title xml:lang="ja">ジャスティスパンチ!</title>
+<title xml:lang="en">Secret Squad Justice Punch!</title>
+<title xml:lang="fr">Justice Punch !</title>
+<title xml:lang="x-jat">Justice Punch!</title>
+</episode>
+<episode id="168588" update="2015-05-21">
+<epno type="1">10</epno>
+<length>25</length>
+<airdate>2015-06-12</airdate>
+<rating votes="3">4.38</rating>
+<title xml:lang="ja">墜落</title>
+<title xml:lang="en">The Fall</title>
+<title xml:lang="fr">La chute</title>
+<title xml:lang="x-jat">Tsuiraku</title>
+</episode>
+<episode id="168589" update="2015-05-21">
+<epno type="1">9</epno>
+<length>25</length>
+<airdate>2015-06-05</airdate>
+<rating votes="3">4.38</rating>
+<title xml:lang="ja">ブラジリアンハイキック</title>
+<title xml:lang="en">Brazilian High Kick</title>
+<title xml:lang="fr">Brazilian High Kick</title>
+<title xml:lang="x-jat">Brazilian High Kick</title>
+</episode>
+<episode id="169046" update="2015-06-18">
+<epno type="1">12</epno>
+<length>25</length>
+<airdate>2015-06-26</airdate>
+<rating votes="1">6.05</rating>
+<title xml:lang="ja">パンチライン</title>
+<title xml:lang="en">Punch Line</title>
+<title xml:lang="fr">Punch Line</title>
+<title xml:lang="x-jat">Punch Line</title>
+</episode>
+</episodes>
+</anime>
