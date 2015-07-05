@@ -9,7 +9,7 @@ import java.io.IOException;
 public class App {
 	public static void main(String[] args) throws IOException {
 		AnidDB client = new AnidDB();
-//		System.out.println(client.loadAnime(10948));
+		//System.out.println(client.loadAnime(10948));
 		client.test();
 	}
 }

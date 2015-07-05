@@ -13,11 +13,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Anime {
-	
+
 	@XmlAttribute
 	private int id;
 	private String type;
 	private int episodecount;
+
+	private String picture;
 
 	private String description;
 	private Ratings ratings = new Ratings();
@@ -36,6 +38,14 @@ public class Anime {
 
 	public void setEpisodes(List<Episode> episodes) {
 		this.episodes = episodes;
+	}
+
+	public String getPicture() {
+		return picture;
+	}
+
+	public void setPicture(String picture) {
+		this.picture = picture;
 	}
 
 	public int getId() {

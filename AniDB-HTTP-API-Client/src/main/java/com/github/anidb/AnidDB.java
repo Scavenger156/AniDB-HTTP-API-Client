@@ -1,11 +1,9 @@
 package com.github.anidb;
 
 import java.io.ByteArrayInputStream;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -14,6 +12,7 @@ import java.util.zip.GZIPInputStream;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.UnmarshalException;
 import javax.xml.bind.Unmarshaller;
 
 import com.github.anidb.vo.Anime;
@@ -143,7 +142,10 @@ public class AnidDB {
 			Unmarshaller unMarshaller = context.createUnmarshaller();
 			Anime param = (Anime) unMarshaller.unmarshal(new ByteArrayInputStream(xml.getBytes()));
 			return param;
-		} catch (JAXBException e) {
+		} catch(UnmarshalException e){
+			return null;
+		}
+		catch (JAXBException e) {
 			throw new RuntimeException(e);
 		}
 	}
