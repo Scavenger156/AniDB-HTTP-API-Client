@@ -29,20 +29,14 @@
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>Shapshot repository</name>
-			<url>http://XXX/nexus/content/repositories/snapshots/</url>
+			<url>http://XXX:8089/nexus/content/repositories/snapshots/</url>
 			<uniqueVersion>false</uniqueVersion>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<!-- Abhängigkeiten -->
 	<dependencies>
-		<!-- JUnit für Testing -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
+	
 	</dependencies>
 
 	<!-- Build erweitern -->
