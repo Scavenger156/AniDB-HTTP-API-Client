@@ -1,8 +1,12 @@
 package com.github.anidb;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.Proxy;
 import java.net.URISyntaxException;
@@ -35,6 +39,10 @@ public class AnidDB {
 	private static final String CLIENT_NAME = "adbhac";
 	private static final String BASE_URL = "http://api.anidb.net:9001/httpapi?";
 	/**
+	 * Write the loaded XML
+	 */
+	private boolean writeFile = false;
+	/**
 	 * Milliseconds
 	 */
 	private int timeOut = 5000;
@@ -51,6 +59,10 @@ public class AnidDB {
 	 */
 	public AnidDB() {
 
+	}
+
+	public void setWriteFile(boolean writeFile) {
+		this.writeFile = writeFile;
 	}
 
 	public void setDisableSSLTrustmanager(boolean disableSSLTrustmanager) {
@@ -104,7 +116,7 @@ public class AnidDB {
 		}
 		try {
 			URL url = new URL(urlSb.toString());
-			Logger.getLogger(getClass().getName()).info("Connect:" +urlSb);
+			Logger.getLogger(getClass().getName()).info("Connect:" + urlSb);
 			if (proxy != null) {
 				anidbConnection = (HttpURLConnection) url.openConnection(proxy);
 			} else {
@@ -177,17 +189,44 @@ public class AnidDB {
 	 */
 	public Anime loadAnime(int anidbId) {
 		String xml = loadAnimeXML(anidbId);
+		if (writeFile) {
+			FileOutputStream fos = null;
+			try {
+				fos = new FileOutputStream(new File(anidbId + ".xml"));
+
+				fos.write(xml.getBytes());
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} finally {
+				if (fos != null) {
+					try {
+						fos.close();
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}
+			}
+		}
 		try {
 
 			JAXBContext context = JAXBContext.newInstance(Anime.class);
 			Unmarshaller unMarshaller = context.createUnmarshaller();
-			Anime param = (Anime) unMarshaller.unmarshal(new ByteArrayInputStream(xml.getBytes()));
+			Anime param = (Anime) unMarshaller.unmarshal(new ByteArrayInputStream(xml.getBytes("UTF-8")));
 			return param;
 		} catch (UnmarshalException e) {
-			Logger.getLogger(getClass().getName()).info("Could not read fron anidb:" +e.getLocalizedMessage());
+
+			Logger.getLogger(getClass().getName()).info("Could not read fron anidb:" + e.getLocalizedMessage());
+			e.printStackTrace();
+			
 			return null;
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
 		}
 	}
 
