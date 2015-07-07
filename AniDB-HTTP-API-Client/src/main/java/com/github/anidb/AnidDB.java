@@ -10,6 +10,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
+import java.util.logging.Logger;
 import java.util.zip.GZIPInputStream;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -103,6 +104,7 @@ public class AnidDB {
 		}
 		try {
 			URL url = new URL(urlSb.toString());
+			Logger.getLogger(getClass().getName()).info("Connect:" +urlSb);
 			if (proxy != null) {
 				anidbConnection = (HttpURLConnection) url.openConnection(proxy);
 			} else {
@@ -182,6 +184,7 @@ public class AnidDB {
 			Anime param = (Anime) unMarshaller.unmarshal(new ByteArrayInputStream(xml.getBytes()));
 			return param;
 		} catch (UnmarshalException e) {
+			Logger.getLogger(getClass().getName()).info("Could not read fron anidb:" +e.getLocalizedMessage());
 			return null;
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
