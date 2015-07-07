@@ -8,8 +8,14 @@ import java.net.Proxy;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.security.SecureRandom;
+import java.security.cert.X509Certificate;
 import java.util.zip.GZIPInputStream;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.UnmarshalException;
@@ -37,11 +43,39 @@ public class AnidDB {
 	private Proxy proxy;
 
 	private URLConnection anidbConnection;
+	private boolean disableSSLTrustmanager = true;
 
 	/**
 	 * 
 	 */
 	public AnidDB() {
+
+	}
+
+	public void setDisableSSLTrustmanager(boolean disableSSLTrustmanager) {
+		this.disableSSLTrustmanager = disableSSLTrustmanager;
+	}
+
+	private void disableSSLTrustManager() {
+		TrustManager[] trustAllCerts = new TrustManager[] { new X509TrustManager() {
+
+			public X509Certificate[] getAcceptedIssuers() {
+				return null;
+			}
+
+			public void checkClientTrusted(X509Certificate[] certs, String authType) {
+			}
+
+			public void checkServerTrusted(X509Certificate[] certs, String authType) {
+			}
+		} };
+		try {
+			SSLContext sc = SSLContext.getInstance("TLS");
+			sc.init(null, trustAllCerts, new SecureRandom());
+			HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+		} catch (Exception e) {
+			;
+		}
 	}
 
 	/**
@@ -57,6 +91,9 @@ public class AnidDB {
 	 * Create a connection to anidb.
 	 */
 	private void connect(URLParameter... parameter) {
+		if (disableSSLTrustmanager) {
+			disableSSLTrustManager();
+		}
 		StringBuffer urlSb = new StringBuffer(CONNECTION_URL);
 		for (URLParameter value : parameter) {
 			urlSb.append('&');
@@ -71,6 +108,8 @@ public class AnidDB {
 			} else {
 				anidbConnection = (HttpURLConnection) url.openConnection();
 			}
+			anidbConnection.setRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.2) Gecko/20100316 Firefox/3.6.2");
+			anidbConnection.setRequestProperty("Referer", "http://anidb.net/perl-bin/animedb.pl?show=main");
 			anidbConnection.setConnectTimeout(timeOut);
 			anidbConnection.setReadTimeout(timeOut);
 			anidbConnection.connect();
@@ -142,10 +181,9 @@ public class AnidDB {
 			Unmarshaller unMarshaller = context.createUnmarshaller();
 			Anime param = (Anime) unMarshaller.unmarshal(new ByteArrayInputStream(xml.getBytes()));
 			return param;
-		} catch(UnmarshalException e){
+		} catch (UnmarshalException e) {
 			return null;
-		}
-		catch (JAXBException e) {
+		} catch (JAXBException e) {
 			throw new RuntimeException(e);
 		}
 	}
