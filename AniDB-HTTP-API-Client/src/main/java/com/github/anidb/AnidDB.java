@@ -2,9 +2,11 @@ package com.github.anidb;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
@@ -188,46 +190,62 @@ public class AnidDB {
 	 * @return Anime
 	 */
 	public Anime loadAnime(int anidbId) {
-		String xml = loadAnimeXML(anidbId);
+		InputStream readSource = null;
 		if (writeFile) {
-			FileOutputStream fos = null;
-			try {
-				fos = new FileOutputStream(new File(anidbId + ".xml"));
-
-				fos.write(xml.getBytes());
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			} finally {
-				if (fos != null) {
-					try {
-						fos.close();
-					} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
+			File cache = new File(anidbId + ".xml");
+			if (cache.exists()) {
+				try {
+					readSource = new FileInputStream(cache);
+				} catch (FileNotFoundException e) {
+					throw new RuntimeException(e); 
 				}
 			}
 		}
+		if (readSource == null) {
+			String xml = loadAnimeXML(anidbId);
+			if (writeFile) {
+				FileOutputStream fos = null;
+				try {
+					fos = new FileOutputStream(new File(anidbId + ".xml"));
+
+					fos.write(xml.getBytes());
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} finally {
+					if (fos != null) {
+						try {
+							fos.close();
+						} catch (IOException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+					}
+				}
+			}
+			try {
+				readSource = new ByteArrayInputStream(xml.getBytes("UTF-8"));
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
 		try {
 
 			JAXBContext context = JAXBContext.newInstance(Anime.class);
 			Unmarshaller unMarshaller = context.createUnmarshaller();
-			Anime param = (Anime) unMarshaller.unmarshal(new ByteArrayInputStream(xml.getBytes("UTF-8")));
+			Anime param = (Anime) unMarshaller.unmarshal(readSource);
 			return param;
 		} catch (UnmarshalException e) {
 
 			Logger.getLogger(getClass().getName()).info("Could not read fron anidb:" + e.getLocalizedMessage());
 			e.printStackTrace();
-			
+
 			return null;
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
-		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return null;
-		}
+		}  
 	}
 
 	/**
@@ -255,9 +273,9 @@ public class AnidDB {
 				throw new IllegalStateException("No active connection found");
 			}
 			if ("gzip".equalsIgnoreCase(anidbConnection.getHeaderField("Content-Encoding"))) {
-				is = new InputStreamReader(new GZIPInputStream(anidbConnection.getInputStream()));
+				is = new InputStreamReader(new GZIPInputStream(anidbConnection.getInputStream()), "UTF-8");
 			} else {
-				is = new InputStreamReader(anidbConnection.getInputStream());
+				is = new InputStreamReader(anidbConnection.getInputStream(), "UTF-8");
 			}
 			int read = 0;
 			char[] data = new char[1024];
