@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.scavenger156</groupId>
 	<artifactId>AniDB-HTTP-API-Client</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>[adbhac] AniDB-HTTP-API-Client</name>
@@ -17,26 +16,35 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- Java 8 (Das wird auch von Eclipse und dem Compilerplugin erkannt daher 
+		<!-- Java 17 (Das wird auch von Eclipse und dem Compilerplugin erkannt daher 
 			müssen wir das Compilerplugin nicht mehr anpassen) -->
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+
 	</properties>
 
-	<!-- Snapshotserver für deployment mittels dem goal "deploy" Username und 
-		Password stehen in der "settings.xml" -->
-	<distributionManagement>
-		<snapshotRepository>
-			<id>nexus</id>
-			<name>Shapshot repository</name>
-			<url>http://XXX:8089/nexus/content/repositories/snapshots/</url>
-			<uniqueVersion>false</uniqueVersion>
-		</snapshotRepository>
-	</distributionManagement>
+	
 
 	<!-- Abhängigkeiten -->
 	<dependencies>
-	
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>3.0.0</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<version>1.7.36</version>
+
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
 	</dependencies>
 
 	<!-- Build erweitern -->
