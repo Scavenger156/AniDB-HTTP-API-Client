@@ -3,7 +3,7 @@
 
 	<groupId>com.github.scavenger156</groupId>
 	<artifactId>AniDB-HTTP-API-Client</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.7-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>[adbhac] AniDB-HTTP-API-Client</name>
@@ -24,27 +24,30 @@
 
 	</properties>
 
-	
-
 	<!-- Abhängigkeiten -->
 	<dependencies>
+
 		<dependency>
 			<groupId>jakarta.xml.bind</groupId>
 			<artifactId>jakarta.xml.bind-api</artifactId>
-			<version>3.0.0</version>
+			<version>2.3.3</version>
 		</dependency>
-		<dependency>
-			<groupId>com.sun.xml.bind</groupId>
-			<artifactId>jaxb-impl</artifactId>
-			<version>3.0.0</version>
-			<scope>runtime</scope>
-		</dependency>
+
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<version>1.7.36</version>
 
 			<artifactId>slf4j-api</artifactId>
 		</dependency>
+ 
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime -->
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>2.3.6</version>
+		</dependency>
+
 	</dependencies>
 
 	<!-- Build erweitern -->
